@@ -44,6 +44,8 @@ h1 {
     border-radius: 50%;
 }
 
+name_summary {}
+
 .name_summary {
     padding: 40px;
     box-sizing: border-box;
@@ -58,7 +60,7 @@ h1 {
 
 .name_summary ul {
     color: #4F4F4E;
-    font-size: 1.5em;
+    font-size: 1.2em;
     list-style-position: inside;
 }
 
@@ -76,6 +78,7 @@ h1 {
 }
 
 .skills>div {
+    font-size: 1.5em;
     color: #4F4F4E;
 }
 
@@ -177,6 +180,14 @@ h1 {
     grid-column: 1/3;
     grid-row: 5/6;
     color: #4F4F4E;
+}
+
+.aducation>p {
+    font-size: 1.2em
+}
+
+.aducation>p:last-child {
+    font-size: 1.5em
 }
 
 .code {
