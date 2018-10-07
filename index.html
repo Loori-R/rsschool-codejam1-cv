@@ -7,21 +7,6 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<!--
-1. Имя, фамилия (реальные)
-2. Контакты (желательно несколько)
-3. Summary (цель, пожелания, раскрыть, что важно, что хочется и почему. 
-Некий вариант самопрезентации. Когда опыта минимум, джун продает свой потенциал, 
-свое желание и способность быстро учиться. Не занимать позицию, что он придет, 
-и все кинутся его учить. Но обратное – у джуна время все брать, отовсюду, всегда и т.д.).
-4. Skills (например: языки программирования, фреймворки, методологии, системы контроля версий, тулы...)
-5. Примеры кода (по возможности СВЕЖИЕ)
-6. Опыт (Junior-у имеет смысл указать весь опыт: тестовые задания, проекты с курсов,
-фрилансовые проекты – все, где он применял вышеупомянутые скилы. 
-Круто, если это будет со ссылками на код)
-7. Образование (в т.ч. курсы, семинары, лекции, онлайн-обучение)
-8. Уровень английского (тут стоит указать, какая именно практика была, как долго и т.д.)
--->
 <main>
     <div class='photo'><img src='img/my_photo.jpg' alt="author photo" width="1000" height="1000"></div>
     <div class='name_summary'>
@@ -32,7 +17,25 @@
             <li>Full of energy and dedication.</li>
             <li>I am calm about criticism.</li>
     </div>
-    <div class='skills'>Skill</div>
+    <div class='skills'>
+        <h1>skills</h1>
+        <div>HTML</div>
+        <div>CSS</div>
+        <div class='rating'>
+            <div class='rhtml'></div>
+        </div>
+        <div class='rating'>
+            <div class='rcss'></div>
+        </div>
+        <div>JavaScript</div>
+        <div>Git</div>
+        <div class='rating'>
+            <div class='rjs'></div>
+        </div>
+        <div class='rating'>
+            <div class='rgit'></div>
+        </div>
+    </div>
     <div class='contacts'>
         <div class='mail'>
             <div class='icon-mail icon'><img src='img/contacts_logo.png' alt='icon mail' width="211" height="103"></div>
@@ -55,10 +58,45 @@
             <div class='text-contacts'><a href='https://github.com/Loori-R'>github</a></div>
         </div>
 
-    </div>>
-    <div class='experience'>Exp</div>
-    <div class='aducation'>Aducation</div>
-    <div class='code'>Code</div>
+    </div>
+    <div class='experience'>
+        <h1>Experience</h1>
+        <p><a href='http://kontinental.by'>kontinental.by</a> - small non-profit project </p>
+        <p><a href='http://gomelfil.by/'>gomelfil.by</a> - participated in the layout of pages</p>
+        <p><a href='https://github.com/Loori-R/warmup'>warmup</a> - 'warmup' - tasks of the first stage course Rolling Scopes</p>
+        <p><a href='https://github.com/Loori-R/love-triangle'>love-triangle</a> - 'love-triangle' - tasks of the first stage course Rolling Scopes</p>
+        <p><a href='https://github.com/Loori-R/sorter'>sorter</a> - 'sorter' - tasks of the first stage course Rolling Scopes</p>
+        <p><a href='https://github.com/Loori-R/quadratic-equation'>quadratic equation</a> - 'quadratic equation' - tasks of the first stage course Rolling Scopes</p>
+        <p><a href='https://github.com/Loori-R/zeros'>zeros</a> - 'zeros' - tasks of the first stage course Rolling Scopes</p>
+        <p><a href='https://github.com/Loori-R/advanced-zeros'>advanced-zeros</a> - 'advanced-zeros' - tasks of the first stage course Rolling Scopes</p>
+        <p><a href='https://github.com/Loori-R/Create-change-delete'>git repositorie</a> - task on adding / changing / deleting elements on the page</p>
+
+
+    </div>
+    <div class='aducation'>
+        <h1>aducation</h1>
+        <p>GOMEL STATE TECHNICAL UNIVERSITY NAMED AFTER P.O.SUHOGOGO</p>
+        <p>Correspondence faculty </p>
+        <p>Specialty: Economist Manager</p>
+        <p>4th course</p>
+        <p>English level: A1 + (Basic Medium)</p>
+    </div>
+    <div class='code'>
+        <h1>examples code</h1>
+        <div class='coding'>
+            <h2><a href="https://github.com/Loori-R/quadratic-equation">Считаем квадратные уровнения</a></h2> <code> module.exports = function solveEquation(equation) {<br> const arr = equation.split(' ');<br> const a = arr[0];<br> const a2 = 2 * a<br>            const b = arr[3] + arr[4];<br> const c = arr[7] + arr[8];<br> let res;<br> if (a != 0) {<br> const D = Math.pow(b, 2) - 4 * a * c;<br> if (D >= 0) {<br> const x1 = ((b * -1) - Math.sqrt(D)) / a2;<br> const x2 = ((b * -1) + Math.sqrt(D)) /
+            a2;<br> res = [Math.round(x1), Math.round(x2)];<br> res.sort((a, b) => a - b);<br> }
+            <br> }
+            <br> return (res)<br> }
+            </code>
+            <h2><a href="https://github.com/Loori-R/quadratic-equation">Считаем кол-во нулей на конце факториала</a></h2> <code>
+            module.exports = function getZerosCount(number) {<br> let i = 0;<br> let a<br> let k = [];<br> do {<br> i += 1;<br> a = number / (Math.pow(5, i))<br> k.push(Math.floor(a));
+            <br> } while (a > 1);<br> let sum = 0;<br> k.forEach((item, index) => {<br> sum += k[index];<br> });
+            <br> return (sum);<br> }
+            <br> }
+            </code>
+        </div>
+    </div>
 </main>
 
 <body>
